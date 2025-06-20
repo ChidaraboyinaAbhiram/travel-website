@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_heading {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 250%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.icon_area {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    grid: 10px;
+}
+
+.icon_img {
+    height: 60px;
+}
+
+.icon_name {
+    font-weight: bold;
+}
+
+.mean_area {
+    margin-right: 10px;
+}
+
+li {
+    padding: 5px;
+    border-radius: 2px;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+li:hover {
+    transform: scale(1.1);
+    background-color: antiquewhite;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.main_area {
+    background-image: url('imaget/bg1.jpg');
+    height: 1000px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 55px;
+    justify-content: space-evenly;
+}
+
+.services_heading {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card1,
+.card2,
+.card3,
+.card1_img1,
+.card2_img2,
+.card3_img3 {
+    max-width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card2_img2 {
+    height: 75%;
+}
+
+.about_us {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(231, 249, 249, 0.749);
+    justify-content: center;
+    margin: 20px 0 10px 0;
+}
+
+.site_text {
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.tell_text {
+    margin-left: 75px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.gallery {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background: #36768c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery_text {
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.place1,
+.place2,
+.place3,
+.place4 {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+}
+
+.g1,
+.g2,
+.g3,
+.g4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body1,
+.card-body2,
+.card-body3,
+.card-body4 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -110%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    gap: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s ease;
+}
+
+.place1:hover .card-body1,
+.place2:hover .card-body2,
+.place3:hover .card-body3,
+.place4:hover .card-body4 {
+    right: 0;
+}
+
+.card-title1,
+.card-title2,
+.card-title3,
+.card-title4
+ {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title1,
+.card-sub-title2,
+.card-sub-title3,
+.card-sub-title4 {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info1,
+.card-info2,
+.card-info3,
+.card-info4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 40px 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.footer {
+    margin-top: 35px;
+    text-align: center;
+    background-color: rgb(53, 52, 52);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 7000px) {
+    .gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tell_text {
+        padding: 10px;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        margin-bottom: 10px;
+    }
+
+    .gallery_text {
+        position: static;
+        margin-top: 10px;
+    }
+}
