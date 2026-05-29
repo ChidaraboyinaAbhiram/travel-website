@@ -12,7 +12,7 @@ Attractive landing page
 
 Destination sections
 
-Smooth navigation.
+Smooth navigation
 
 Clean and minimal interface
 
